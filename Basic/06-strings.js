@@ -8,7 +8,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=6565
 // Concatenación
 
 let myName = "Brais"
-let greeting = "Hola, " + myName + "!"
+let greeting = "Hola, "+myName+"!"
 console.log(greeting)
 console.log(typeof greeting)
 
