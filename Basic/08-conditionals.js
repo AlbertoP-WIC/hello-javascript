@@ -32,11 +32,13 @@ if (age == 37) {
 }
 
 // Operador ternario
+// Para usar en omparativas simples.
 
 const message = age == 37 ? "La edad es 37" : "La edad no es 37"
 console.log(message)
 
 // switch
+// Para inspeccionar la misma variable.
 
 let day = 3
 let dayName
