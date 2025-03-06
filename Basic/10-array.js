@@ -15,8 +15,8 @@ console.log(myArray2)
 
 // Inicialización
 
-myArray = [3]
-myArray2 = new Array(3)
+myArray = [3] // Se pueden guardar datos directamente, separados por comas.
+myArray2 = new Array(3) // El numero significa el tamaño del array.
 
 console.log(myArray)
 console.log(myArray2)
