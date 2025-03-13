@@ -39,7 +39,7 @@ let vVote = 5
 if (vVote >= 18){
     console.log("Puedes votar.")
 } else {
-    console.log(`Aun no puedes votar. Te faltan ${18- vVote} años.`)
+    console.log(`Aun no puedes votar. Te faltan ${18-vVote} años.`)
 }
 
 // 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable dependiendo de la edad.

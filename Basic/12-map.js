@@ -25,42 +25,40 @@ console.log(myMap)
 
 // set
 
-myMap.set("alias", "mouredev")
-myMap.set("name", "Brais Moure")
+myMap.set("alias", "mouredev") // Se agrega una nueva Key al Map.
+myMap.set("name", "Brais Moure") // Se remplaza el value de la Key "name".
+// A diferencia de los Arrays, esto es como una tabla y se manejan las Keys.
+// Si la Key existe este method remplaza el valor, si no existe la agrega al Map.
 
 console.log(myMap)
 
 // get
 
-console.log(myMap.get("name"))
+console.log(myMap.get("name")) // Retorna el value de la Key.
 console.log(myMap.get("surname"))
 
 // has
 
-console.log(myMap.has("surname"))
+console.log(myMap.has("surname")) // Comprueba si una Key existe, retorna un boolean.
 console.log(myMap.has("age"))
 
 // delete
 
-myMap.delete("email")
-
+myMap.delete("email") // Borra tanto la Key como el value, especificando el Key.
 console.log(myMap)
 
 // keys, values y entries
 
-console.log(myMap.keys())
-console.log(myMap.values())
-console.log(myMap.entries())
+console.log(myMap.keys()) // Retorna un listado de solo las Keys.
+console.log(myMap.values()) // Retorna un listado  de solo los Values.
+console.log(myMap.entries()) // Retorna cuantas "rows" tiene.
 
 // size
 
 console.log(myMap.size)
 
-// clear
+// clear, Borra todo el Map.
 
 myMap.clear()
 
 console.log(myMap)
-
-
-

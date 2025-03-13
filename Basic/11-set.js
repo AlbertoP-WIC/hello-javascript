@@ -25,7 +25,7 @@ mySet.add("https://moure.dev")
 
 console.log(mySet)
 
-mySet.delete("https://moure.dev")
+mySet.delete("https://moure.dev") // Para borrar hay que indicar el value exacto.
 
 console.log(mySet)
 
@@ -34,7 +34,7 @@ console.log(mySet.delete(4))
 
 console.log(mySet)
 
-// has
+// has, Comprueba si un elemento existe.
 
 console.log(mySet.has("Moure"))
 console.log(mySet.has("Brais"))
@@ -52,7 +52,7 @@ console.log(myArray)
 mySet = new Set(myArray)
 console.log(mySet)
 
-// No admite duplicados
+// No admite duplicados, es case sensitive.
 
 mySet.add("braismoure@mouredev.com")
 mySet.add("braismoure@mouredev.com")
