@@ -93,7 +93,7 @@ let myNewArray = myArray.slice(1, 3)
 console.log(myArray)
 console.log(myNewArray)
 
-// splice
+// splice, remueve o replaza elementos del array.
 
 myArray.splice(1, 3)
 console.log(myArray)

@@ -24,11 +24,11 @@ console.log(myMap)
 // Métodos y propiedades
 
 // set
+// A diferencia de los Arrays, esto es como una tabla y se manejan las Keys.
+// Si la Key existe este method remplaza el valor, si no existe la agrega al Map.
 
 myMap.set("alias", "mouredev") // Se agrega una nueva Key al Map.
 myMap.set("name", "Brais Moure") // Se remplaza el value de la Key "name".
-// A diferencia de los Arrays, esto es como una tabla y se manejan las Keys.
-// Si la Key existe este method remplaza el valor, si no existe la agrega al Map.
 
 console.log(myMap)
 
