@@ -6,6 +6,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=11575
 // Loops o bucles
 
 // for
+// La condicion se ejectua dentro del for.
 
 for (let i = 0; i < 5; i++) {
     console.log(`Hola ${i}`)
@@ -18,6 +19,8 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 // while
+// La condicion se ejecuta fuera del bloque while.
+// El codigo se puede ejecutar solo so la condicion se cumple.
 
 let i = 0
 while (i < 5) {
@@ -30,7 +33,7 @@ while (i < 5) {
 // }
 
 // do while
-
+// Igual al while, con la diferencia que aqui el codigo si se ejecuta minimo 1 vez.
 i = 6
 do {
     console.log(`Hola ${i}`)
@@ -38,6 +41,8 @@ do {
 } while (i < 5)
 
 // for of
+// Recorre los valores de un objeto que sea iterable.
+// Se considera algo iterable una estructura de datos y un tipo de dato.
 
 myArray = [1, 2, 3, 4]
 
@@ -51,23 +56,31 @@ myMap = new Map([
 
 myString = "¡Hola, JavaScript!"
 
+// En este ejemplo imprime cada elemento del array.
 for (let value of myArray) {
     console.log(value)
 }
 
+// En este ejemplo imprime cada elemento del set.
 for (let value of mySet) {
     console.log(value)
 }
 
+// En este ejemplo imprime cada elemento del key y value del map.
 for (let value of myMap) {
     console.log(value)
 }
 
+// En este ejemplo imprime cada letra del string por separado.
 for (let value of myString) {
     console.log(value)
 }
 
 // break y continue
+// El continue lo que hace es ignorar un valor en especifico y continuar con el loop.
+// En este ejemplo: Si i = 5, ignoralo del loop y continua con el siguiente elemento.
+// El break detiene por completo el loop en la condicion especificada.
+// Para este ejemplo el loop se rompe si i = 7.
 
 for (let i = 0; i < 10; i++) {
     if (i == 5) {
