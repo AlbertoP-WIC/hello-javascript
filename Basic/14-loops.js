@@ -6,7 +6,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=11575
 // Loops o bucles
 
 // for
-// La condicion se ejectua dentro del for.
+// La condicion se ejecuta dentro del for.
 
 for (let i = 0; i < 5; i++) {
     console.log(`Hola ${i}`)
