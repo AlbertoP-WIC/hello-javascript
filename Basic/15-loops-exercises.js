@@ -78,3 +78,13 @@ for (let i = 2; i < 10; i++) {
 }
 
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10.
+
+const vArrNum2 = [0, 5, 10, 15, 20, 25, 30]
+const vArrNum3 = []
+
+for (let l = 0; l <= vArrNum2.length; l ++) {
+    if (vArrNum2[l] > 10) {
+        vArrNum3.push(vArrNum2[l])
+    } 
+}
+console.log(vArrNum3)

@@ -19,8 +19,8 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 // while
-// La condicion se ejecuta fuera del bloque while.
-// El codigo se puede ejecutar solo so la condicion se cumple.
+// La condicion se ejecuta fuera del bloque while. O sea antes de cada iteracion.
+// El codigo se puede ejecutar solo si la condicion se cumple.
 
 let i = 0
 while (i < 5) {
@@ -34,6 +34,7 @@ while (i < 5) {
 
 // do while
 // Igual al while, con la diferencia que aqui el codigo si se ejecuta minimo 1 vez.
+// La condicion se revisa despues de cada iteracion.
 i = 6
 do {
     console.log(`Hola ${i}`)
