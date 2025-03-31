@@ -45,17 +45,17 @@ do {
 // Recorre los valores de un objeto que sea iterable.
 // Se considera algo iterable una estructura de datos y un tipo de dato.
 
-myArray = [1, 2, 3, 4]
+const myArray = [1, 2, 3, 4]
 
-mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
+const mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
 
-myMap = new Map([
+const myMap = new Map([
     ["name", "Brais"],
     ["email", "braismoure@mouredev.com"],
     ["age", 37]
 ])
 
-myString = "¡Hola, JavaScript!"
+const myString = "¡Hola, JavaScript!"
 
 // En este ejemplo imprime cada elemento del array.
 for (let value of myArray) {
