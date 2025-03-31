@@ -25,6 +25,7 @@ myFuncWithParams("Brais")
 myFuncWithParams("MoureDev")
 
 // Funciones anónimas
+//  Se hacen llamar anonimas ya que la funcion es declarada dentro de una variable.
 
 const myFunc2 = function (name) {
     console.log(`¡Hola, ${name}!`)
@@ -53,11 +54,11 @@ sum(5, 10)
 sum(5)
 sum()
 
+// Por defecto
+
 function defaultSum(a = 0, b = 0) {
     console.log(a + b)
 }
-
-// Por defecto
 
 defaultSum()
 defaultSum(5)
@@ -67,7 +68,7 @@ defaultSum(b = 5)
 // Retorno de valores
 
 function mult(a, b) {
-    return a * b
+    return (a * b)
 }
 
 let result = mult(5, 10)
