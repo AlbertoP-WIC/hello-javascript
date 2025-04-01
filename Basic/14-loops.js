@@ -55,8 +55,6 @@ const myMap = new Map([
     ["age", 37]
 ])
 
-const myString = "¡Hola, JavaScript!"
-
 // En este ejemplo imprime cada elemento del array.
 for (let value of myArray) {
     console.log(value)
@@ -73,6 +71,7 @@ for (let value of myMap) {
 }
 
 // En este ejemplo imprime cada letra del string por separado.
+const myString = "¡Hola, JavaScript!"
 for (let value of myString) {
     console.log(value)
 }
