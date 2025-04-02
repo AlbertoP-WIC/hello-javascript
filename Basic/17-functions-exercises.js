@@ -24,7 +24,7 @@ sortArray([56, 2, 94, 999, 26, 10])
 function viewVowels(myString) {
     let vVocales = "aeiouAEIOU" // Lista de vocales en minúscula y mayúscula.
     let vCounter = 0 // Contador para las vocales.
-
+    
     for (let vIndex = 0; vIndex <= myString.length; vIndex++) { // Recorremos cada carácter de la cadena.
         if (vVocales.includes(myString[vIndex])) { // Si el carácter actual está en `vVocales`.
             vCounter++; // Incrementamos el contador.
