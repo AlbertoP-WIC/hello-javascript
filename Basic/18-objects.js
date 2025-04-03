@@ -3,26 +3,24 @@ Clase 33 - Objetos
 Vídeo: https://youtu.be/1glVfFxj8a4?t=14229
 */
 
-// Objetos
+// Objetos.
 
-// Sintaxis
-
+// Sintaxis.
 let person = {
     name: "Brais",
     age: 37,
     alias: "MoureDev"
 }
 
-// Acceso a propiedades
+// Acceso a propiedades.
 
-// Notación punto
+// Notación punto.
 console.log(person.name)
 
-// Notación de corchetes
+// Notación de corchetes.
 console.log(person["name"])
 
-// Modificación de propiedades
-
+// Modificación de propiedades.
 person.name = "Brais Moure"
 console.log(person.name)
 
@@ -31,21 +29,18 @@ person.age = "37"
 console.log(person.age)
 console.log(typeof person.age)
 
-// Eliminación de propiedades
-
+// Eliminación de propiedades.
 delete person.age
-
 console.log(person)
 
-// Nueva propiedad
-
+// Nueva propiedad.
 person.email = "braismoure@mouredev.com"
 person["age"] = 37
 
 console.log(person)
 
-// Métodos (funciones)
-
+// Métodos (funciones).
+// Se puede asignar funciones dentro de las propiedades un objeto.
 let person2 = {
     name: "Brais",
     age: 37,
@@ -56,8 +51,7 @@ let person2 = {
 }
 person2.walk()
 
-// Anidación de objetos
-
+// Anidación de objetos.
 let person3 = {
     name: "Brais",
     age: 37,
@@ -75,14 +69,13 @@ let person3 = {
 }
 
 console.log(person3)
-
 console.log(person3.name)
 console.log(person3.job)
 console.log(person3.job.name)
 person3.job.work()
 
-// Igualdad de objetos
-
+// Igualdad de objetos.
+// Dos objects nunca van a ser iguales, solo se puede comparar cada una de las propiedades.
 let person4 = {
     name: "Brais Moure",
     alias: "MoureDev",
@@ -98,15 +91,36 @@ console.log(person === person4)
 
 console.log(person.name == person4.name)
 
-// Iteración
+// Iteración.
+// Para iterar en un objeto en lugar de usar For Of, se debe usar For In.
 
+// Ejemplo 1:
 for (let key in person4) {
     console.log(key + ": " + person4[key])
 }
 
-// Funciones como objetos
+// Ejemplo 2:
+/*
+The for...in loop iterates over the properties of the user object.
+"key" will take the values of the property names ("name", "age", "isAdmin") one by one.
+alert( key ) displays the current property name.
+alert( user[key] ) retrieves and displays the corresponding value of that property.
+*/
+let user = {
+    name: "John",
+    age: 30,
+    isAdmin: true
+  };
+  
+  for (let key in user) {
+    alert( key );  // All keys: name, age, isAdmin.
+    alert( user[key] ); // All vaules for the keys: John, 30, true.
+  }
 
-function Person(name, age) { // Debería ser una clase
+// Funciones como objetos.
+// Esto no es una buena practica, se debe usar una clase de esto.
+
+function Person(name, age) { // Debería ser una clase.
     this.name = name
     this.age = age
 }
