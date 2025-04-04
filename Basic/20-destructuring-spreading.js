@@ -18,6 +18,7 @@ console.log(myValue)
 let myName = person.name
 console.log(myName)
 
+
 // Desestructuración.
 // Es una sintaxis que permite extraer valores de objetos o arrays y asignarlos a variables.
 
