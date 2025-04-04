@@ -33,7 +33,7 @@ let vDish02 = {
     food1: "eggs",
     food2: "ham"
 };
-let {food1: vFood1, food2: vFood2} = vDish01;
+let {food1: vFood1, food2: vFood2} = vDish02;
 console.log("Respuesta del ejercicio 4:");
 console.log(vFood1);
 console.log(vFood2);
@@ -66,9 +66,33 @@ console.log("Respuesta del ejercicio 7:");
 console.log(myNewArray2);
 
 // 8. Usa propagación para combinar dos objetos en uno nuevo.
-
+let vPerson1 = {
+    personName: "John",
+    personLastName: "Smith",
+    personAge: 37
+};
+let vPerson2 = {
+    personName2: "Dexter",
+    personLastName2: "Morgan",
+    personAge2: 40
+};
+let vPersonFusion = {...vPerson1, ...vPerson2};
+console.log("Respuesta del ejercicio 8:");
+console.log(vPersonFusion);
 
 // 9. Usa propagación para crear una copia de un objeto.
-
+let vCompany = {
+    vName: "LG",
+    vNiche: "Electronics"
+};
+let vCompanyCopy = {...vCompany};
+console.log("Respuesta del ejercicio 9:")
+console.log(vCompanyCopy);
 
 // 10. Combina desestructuración y propagación.
+const vMyAnimes = ["Dragon Ball", "Naruto", "Rurouni Kenshin"];
+const vMyHobbies = ["Anime", "Video games", "Technology"];
+let [vAnime1, vAnime2, vAnime3] = vMyAnimes;
+let vFun = [...vMyHobbies, vAnime1, vAnime2, vAnime3];
+console.log("Respuesta del ejercicio 10:");
+console.log(vFun);
